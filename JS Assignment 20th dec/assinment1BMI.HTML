@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var weight=82;
+        // var height=1.7;
+        // var bmi=(weight/(height*height)).toFixed(2)
+        // console.log(bmi);
+        // if(bmi<18.6)
+        // console.log("underweight");
+        // else if(bmi>=18.6 && bmi<24.9)
+        // console.log("healthyweight");
+        // else
+        // console.log("overweight");
+
+        //using ternary operator
+        let weight=84;
+        let height=1.7;
+        let bmi=(weight/(height*height)).toFixed(2);
+        console.log(bmi);
+        let res=bmi<0 || bmi>100 || typeof(bmi)===Number || isNaN(true)? `invalid`:
+            bmi>0 && bmi<=18.5? "underweight":
+            bmi>18.5 && bmi<=24.9? "normalweight":"over weight"
+            console.log(res);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <link rel="stylesheet" href="val2.css">
+</head>
+<body>
+    <section id="box">
+
+        <div id="body">
+            <table id="continer" cellspacing="10px">
+                <form>
+                    <h1 id="header">Details</h1>
+                    <tr>
+                        <td><label for="">Name:</label></td>
+                        <td><input type="text" value="imran" placeholder="Enter Your Name" id="name" required><span
+                                id="errname"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Password:</label></td>
+                        <td><input type="password" value="password.123" maxlength="15" placeholder="Enter Password" id="password"><span
+                                id="errpass"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Email:</label></td>
+                        <td><input type="Email" value="imranmr1997@gmail.com" placeholder="Enter Your Email Id" id="email"><span id="erremail"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Age:</label></td>
+                        <td><input type="number" value="30" maxlength="3" placeholder="Enter Your Current Age" id="age"><span
+                                id="errage"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Gender:</label></td>
+                        <td><input type="radio" checked name="gender" class="gender" value="Male"> Male
+                            <input type="radio" name="gender" class="gender" value="Female"> Female <span
+                                id="errgender"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Subject Studied:</label></td>
+                        <td>
+                            <input type="checkbox" class="subject" id="j" value="java"> Python
+                            &nbsp&nbsp<input type="checkbox" class="subject" id="js" value="javaScript"> JavaScript
+                            &nbsp&nbsp <input type="checkbox" class="subject" id="s" value="sql"> MongoDB
+                            &nbsp &nbsp<input type="checkbox" class="subject" id="h" value="html"> Html
+                            &nbsp&nbsp<input type="checkbox" class="subject" id="c" value="css"> Css
+                            <span id="errsubject"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">state:</label></td>
+                        <td>
+                            <select id="state" reqiuerd>
+                                <option class="states" value="select">select</option>
+                                <option class="states" value="karnataka">Karnataka</option>
+                                <option class="states" value="maharastra">Maharastra</option>
+                                <option class="states" value="kerla">Kerla</option>
+                                <option class="states" value="TamilNadu">TamilNadu</option>
+                                <option class="states" value="anddhraPradesh">AndhraPradesh</option>
+                                <option class="states" value="telangana">Rajasthan</option>
+                                <option class="states" value="Uttarpradesh">Uttarpradesh</option>
+                                <option class="states" value="Gujrat">Gujrat</option>
+                                <option class="states" value="kolkata">Kolkata</option>
+                                <option class="states" value="delhi">Delhi</option>
+                                <option class="states" value="rajasthan">Telangana</option>
+                            </select>
+                            <br>
+                            <span id="errstate"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="checkbox" id="agree">
+                             I agree the terms and conditions</td>
+                    </tr>
+                    <span id="erragree"></span>
+                </form>
+            </table>
+        </div>
+        <div id="button"></div>
+        <button id="submit" onclick="submit()">Submit</button>
+    </section>
+
+    <table id="table" border="2px">
+        <th class="header">Name</th>
+        <TH class="header">password</TH>
+        <th>Email Id</th>
+        <th class="header">Age</th>
+        <th class="header">Gender</th>
+        <th class="header">state</th>
+        <th class="header">subjects</th>
+    </table>
+
+
+    <script src="./val2.js"></script>
+</body>
+
+</html>

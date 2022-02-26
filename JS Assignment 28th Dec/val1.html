@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <link rel="stylesheet" href="./val1.js">
+</head>
+<body>
+    <section id="box">
+   
+    <div id="body">
+    <table id="continer" cellspacing="10px">
+    <form >
+<h1 id="header">Details</h1>
+<tr>
+    <td><label for="">Name:</label></td>
+    <td><input type="text" placeholder="Enter Your Name" id="name" required><span id="errname"></span></td>
+</tr>
+<tr>
+    <td><label for="">Password:</label></td>
+    <td><input type="password" maxlength="15" placeholder="Enter Password" id="password"><span id="errpass"></span></td>
+</tr>
+<tr>
+    <td><label for="">Email:</label></td>
+    <td><input type="Email" placeholder="Enter Your Email Id" id="email" ><span id="erremail"></span></td>
+</tr>
+<tr>
+    <td><label for="">Age:</label></td>
+    <td><input type="number" maxlength="3" placeholder="Enter Your Current Age" id="age"><span id="errage">ertyhj</span></td>
+</tr>
+<tr>
+    <td><label for="">Gender:</label></td>
+    <td><input type="radio" name="gender" class="gender" value="Male"> Male &nbsp
+        &nbsp<input type="radio" name="gender" class="gender" value="Female"> Female <span id="errgender"></span></td>
+</tr>
+<tr>
+    <td><label for="">Subject Studied:</label></td>
+    <td>
+        <input type="checkbox" class="subject" id="j" value="java"> java
+        &nbsp&nbsp<input type="checkbox" class="subject" id="js"  value="javaScript"> javaScript
+        &nbsp&nbsp <input type="checkbox" class="subject" id="s"   value="sql"> Sql
+        &nbsp &nbsp<input type="checkbox" class="subject" id="h"  value="html"> html
+        &nbsp&nbsp<input type="checkbox" class="subject" id="c"  value="css"> css
+        <span id="errsubject"></span>
+    </td>
+</tr>
+<tr>
+    <td><label for="">state:</label></td>
+    <td>
+        <select id="state" reqiuerd>
+            <option class="state" value="select">select</option>
+            <option class="state" value="karnataka">karnataka</option>
+            <option class="state" value="maharastra">maharastra</option>
+            <option class="state" value="kerla">kerla</option>
+            <option class="state" value="TamilNadu">TamilNadu</option>
+            <option class="state" value="anddhraPradesh">AndhraPradesh</option>
+            <option class="state" value="telangana">Telangana</option>
+            <option class="state" value="Uttarpradesh">Uttarpradesh</option>
+            <option class="state" value="Gujrat">Gujrat</option>
+            <option class="state" value="kolkata">Kolkata</option>
+            <option class="state" value="delhi">Delhi</option>
+            <option class="state" value="rajasthan">Rajasthan</option>
+        </select>
+        <br>
+        <span id="errstate"></span>
+    </td>
+</tr>
+<tr>
+    <td colspan="2"><input type="checkbox" id="agree">
+        &nbsp   &nbsp I agree the terms and condition Lorem ipsum dolor sit amet,
+       consectetur adipisicing elit. Numquam, praesentium!</td>
+</tr>    
+<span id="erragree"></span>
+    </form>
+</table>
+</div>
+<div id="button"></div>
+<button id="submit" onclick="submit()">Submit</button>
+</section>
+
+<table  id="tab" border="2px">
+    <th class="header">Name</th>
+    <TH class="header">password</TH>
+    <th>Email Id</th>
+    <th class="header">Age</th>
+    <th class="header">Gender</th>
+    <th class="header">state</th>
+    <th class="header">subjects</th>
+</table>
+
+
+<script src="./val1.js"></script>
+</body>
+</html>

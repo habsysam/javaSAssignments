@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./validation.css">
+</head>
+<body>
+    <div class="regform"><h1>Registration From</h1></div>
+    <div class='main'>
+    <form> 
+        <div id ='name'>
+            <h2 class="name">Name</h2>
+            <input class="firstname" type="text" name="first_name"> <br>
+            <!-- <label class="firstlable" > first name</label> <br> -->
+            <!-- <input  class="lastname" type="text" name ="last_name"> -->
+            <!-- <label class="lastlable" >last name</label> -->
+        </div>
+       <h2 class="name">Company</h2>
+        <input class="company" type="text" name="company">
+
+       <h2 class="name">Email</h2>
+       <input  class="email"type="email"name='email' >
+
+
+       <h2 class="name">Phone</h2>
+       <input class="code"type="texT"  name="area_code" >
+       <label class="area-code">Area Code</label>
+       <input class="number"type="number" name="phone" placeholder="Enter your Number" maxlength="10" minlength="10">
+       <label class="phone-number">Phone Number</label>
+
+       <h2 class="name">Subject</h2>
+       <select class="option" name="subject" >
+           <option disabled="disabled" selected="selected">--choose option</option>
+           <option >selected1</option>
+           <option >selected2</option>
+           <option >selected3</option>
+           <option >selected4</option>
+           <option >selected5</option>
+       </select>
+
+
+       <h2 id="student">Gender</h2>
+       <label class="radio">
+           <input class="radio"type="radio" checked="checked" name="">
+           <span class="checkmark"></span>
+           Male
+       </label>
+       <label class="radio">
+           <input class="radio-two"type="radio" name="">
+           <span class="checkmark"></span>
+           female
+       </label>
+
+       <button type="submit"  onclick="showAlert()" >Register</button>
+       
+
+    </form>
+    </div>
+    <script>
+          function showAlert() {
+    var myText = "Plse enter all the tabs";
+    alert (myText);
+  }
+
+    </script>
+</body>
+</html>
